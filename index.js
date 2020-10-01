@@ -11,6 +11,10 @@ app.use(cors());
 
 const port = 5000
 
+app.get('/' , (req , res) => {
+    res.send("Hello heroku app.Successfully deploy ema john server on heroku app")
+})
+
 // const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dvdk4.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 // const client = new MongoClient(uri, { useNewUrlParser: true , useUnifiedTopology: true });
 // client.connect(err => {
